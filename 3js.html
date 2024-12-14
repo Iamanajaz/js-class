@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-size: 45px;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="aa">even odd</div> -->
+    <div id="bb">profit and loss</div>
+    <div id="cc"></div>
+    <script >//even and odd
+        // let b=prompt("enter no:");
+        // let a = parseInt(b);
+        // if(a%2==0){
+        //     document.getElementById('aa').innerHTML=a +" is even ";
+        // }
+        // else{
+        //     document.getElementById('aa').innerHTML=a +" is odd ";
+        // }
+        
+        //profit and loss
+        
+        let cost=prompt("enter cost price:");
+        let cost1 = parseFloat(cost);
+        let sell=prompt("enter sell price:");
+        let sell1 = parseFloat(sell);
+        
+        if(sell1 > cost1)
+            {
+            document.getElementById('bb').innerHTML=" we have profit :"+ (sell1 - cost1);
+        }
+        
+        else if(cost1>sell1)
+            {
+            document.getElementById('bb').innerHTML="we have loss :" + (cost1-sell1) ;
+        }
+        else if(cost1 == sell1){
+            document.getElementById('bb').innerHTML="no loss no profit ";
+        }
+        else{
+            document.getElementById('bb').innerHTML="error";
+        }
+        
+    </script>
+</body>
+</html>
