@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    display: flex;
+    column-gap: 15px;
+    /* padding-left: 30px; */
+}
+
+.menu{
+    padding-left: 50px;
+}
+
+ul li, a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    text-transform: capitalize;
+    
+}
+
+.nav{
+    /* border:2px solid; */
+    display: flex;
+    align-items: center;
+    /* height: 100px; */
+    /* padding: 10px; */
+    position: fixed;
+    width:100%;
+    background-color: white;
+    z-index: 1;
+}
+
+.logo{
+    width:20%;
+    /* border: 2px solid red; */
+    text-align: center;
+    background-color: red;
+    color: white;
+    font-family: cursive;
+    padding: 10px 0px;
+    /* border-bottom-right-radius: 200px; */
+    clip-path: polygon(100% 0, 100% 0, 100% 0, 89% 100%, 0 100%, 0% 0%);
+}
+
+.hero-section{
+    background-image: url(/mockup-car-white-background-8k-detail-bmw-with-headlights-is-parked-street_1240491-2261.jpg);
+    padding: 250px 0px 250px 50px;
+    /* height: 100vh; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-container{
+    /* border: 2px solid red; */
+    line-height: 2;
+}
+
+
+.hero-container h1{
+    font-size: 45px;
+    text-transform: capitalize;
+    color: white;
+}
+
+.hero-container p{
+    font-size: 25px;
+    text-transform: capitalize;
+    color: white;
+    font-weight: bolder;
+}
+
+.hero-container a button{
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: red;
+    color: white;
+    border:none;
+}
+
+.section-container{
+    display: flex;
+    align-items: center;
+    /* column-gap: ; */
+}
+
+.section-image{
+    width:50%;
+    border:2px solid red;
+    position: relative;
+    left: 20px;
+}
+
+.section-content{
+    width:50%;
+    border:2px solid;
+}
+
+.image-one{
+    width:500px;
+    height: 500px;
+    border:2px solid orangered;
+}
+
+.image-one img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-two{
+    width:200px;
+    height: 200px;
+    position: absolute;
+    top: 130px;
+    left:50%;
+}
+
+.image-two img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border:5px solid black;
+}
