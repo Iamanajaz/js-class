@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,8 +14,21 @@
         }
     </style>
 </head>
+
 <body>
     <div id="aa"></div>
-<script></script>
+    <script>let y = prompt("enter join year:");
+        let year = parseFloat(y);
+
+        let cy = prompt("enter current year:");
+        let curyear = parseFloat(cy);
+
+        let bonus = 0;
+        let difyear = curyear - year;
+        if (difyear > 3) {
+            bonus = 2500;
+        }
+        document.getElementById('aa').innerHTML = 'employe bonus is:' + bonus;</script>
 </body>
+
 </html>
