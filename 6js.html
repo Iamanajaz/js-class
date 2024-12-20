@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch case</title>
+    <style>
+     body {
+            font-size: 45px;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="aa"></div>
+    <script> 
+    let a1 = prompt("enter any no");
+    let a = parseInt(a1);
+    switch(a){
+        case 1: document.getElementById('aa').innerHTML= 'you select 1 option';
+        break;
+        case 2: document.getElementById('aa').innerHTML= 'you select 2 option';
+        break;
+        default:document.getElementById('aa').innerHTML= 'error option selected';
+        break;
+
+
+    }
+    </script>
+</body>
+</html>
