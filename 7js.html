@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+            font-size: 45px;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="aa"></div>
+    <script> 
+    let a1 = prompt("enter 1st number:");
+    let a2 = prompt("enter 2nd number:");
+    let a = parseInt(a1);
+    let b = parseInt(a2);
+    let oprator = prompt("enter opration: \n 1.add  2.subtraction \n 3.multiply  4.divide");
+    let o = parseInt(oprator);
+    switch(o){
+        case 1: document.getElementById('aa').innerHTML= a+b;
+        break;
+        case 2: document.getElementById('aa').innerHTML= a-b;
+        break;
+        case 3: document.getElementById('aa').innerHTML= a*b;
+        break;
+        case 4: if(b>0){document.getElementById('aa').innerHTML= a/b;}
+        else{ document.getElementById('aa').innerHTML=a +' can not divide by 0'}
+        break;
+        default:document.getElementById('aa').innerHTML= 'error option selected';
+        break;
+    }
+    </script>
+</body>
+</html>
