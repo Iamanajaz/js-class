@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for-in loop</title>
+    <style>
+ body {
+        font-size: 45px;
+        text-align: center;
+        background-color: black;
+        color: white;
+    }       </style>
+</head>
+<body>
+    for-in loop -> for in loop is used for object and array also we can use to print the key values of the object . the javascript for-in statement loop through the properties of an object.<br>
+    syntax:
+    for(key in object){
+        statement;
+    } 
+    <div id="aa"></div>
+    <script>
+        let student = {
+            name : 'aman',
+            age : 22,
+            cgea : 7.6,
+            ispass : true
+        }
+        for(let i in student){
+            console.log(i);
+            console.log(student[i]);
+        }
+        let a = '';
+        for(let j in student){
+            a += '<br>'+student[j];                 
+            
+        }
+        document.getElementById('aa').innerHTML=a;
+        
+    </script>
+</body>
+</html>
