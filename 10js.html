@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for-of loop</title>
+    <style>
+    body {
+        font-size: 45px;
+        text-align: center;
+        background-color: black;
+        color: white;
+    }    </style>
+</head>
+<body>
+    <div id="aa"></div>
+    <script>
+        const fruit = ['app','banana','orange','mango'];
+        let a =" ";
+        let str = "aman ajaz";
+            for(let i of str){
+                console.log(i);
+            }
+            for(let j of fruit){
+                a += j+  "<br>";
+            }
+            document.getElementById('aa').innerHTML=a;
+            console.log(a);
+        
+    </script>
+</body>
+</body>
+</html>
