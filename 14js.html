@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Username Creator</title>
+    <style>
+ body {
+        font-size: 45px;
+        text-align: center;
+        background-color: black;
+        color: white;
+    }       
+    p{
+        text-transform: capitalize;
+    }
+    button{
+        font-size: 25px;
+        background-color: blue;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    input{
+        font-size: 25px;
+        padding: 10px;
+    }
+    #aa{
+        margin: 20px;
+        
+    }
+    </style>
+</head>
+<body>
+    <p> enter their full name generate a username based on their input start username by @ followed by name ending with full name length</p>  
+    <br>
+    <input type="text" id="name">
+    <button onclick="generate()">Generate</button>
+    <div id="aa"></div>
+    <script>
+        
+        
+        function generate(){
+            let str = document.getElementById('name').value;
+            
+            let str1 =str.replaceAll(' ','_')
+            document.getElementById('aa').innerHTML="Username: "+"@"+str1+str.length;
+        }
+    </script>
+</body>
+</html>
