@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+    <style>
+ body {
+        font-size: 45px;
+        text-align: center;
+        background-color: black;
+        color: white;
+    }       </style>
+</head>
+<body>
+     <!-- for a given array price of items [1,2,3,4,5] all items have offer of 10% off them change the array to store final price after applying offer -->
+    <div id="aa"></div>
+    <script> 
+        let price =[10,20,30,40,50];
+        let offprice=[];
+       for(let i in price){
+        offprice[i] = price[i] - (1/10*price[i]); 
+       }
+       console.log(price);
+       console.log(offprice);
+       document.getElementById('aa').innerHTML=offprice;
+    </script>
+</body>
+</html>
